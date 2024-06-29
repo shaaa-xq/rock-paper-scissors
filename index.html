@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+      <h2 class="text-4xl">Rock, Paper, Scissors!</h2>
+      <div class="card flex justify-center">
+        <div class="game">
+          <img src="assets/rock.png" id="user" />
+          <h2 style="text-align: center;">User</h2>
+        </div>
+        <div class="game">
+          <img src="assets/rock.png" id="computer" style="transform: scaleX(-1)" />
+          <h2>Computer</h2>
+        </div>
+      </div>
+      <div class="desc-container justify-center">
+        <h2 style="text-align: center;" id="description">Pilih salah satu button di bawah</h2>
+      </div>
+      <div class="choices-btn flex justify-center space-x-3">
+        <button class="btn rounded-lg" id="rock" onclick="userClick('rock')">Batu</button>
+        <button class="btn rounded-lg" id="paper" onclick="userClick('paper')">Kertas</button>
+        <button class="btn rounded-lg" id="scissors" onclick="userClick('scissors')">Gunting</button>
+      </div>
+  </body>
+  <script src="script.js"></script>
+</html>
